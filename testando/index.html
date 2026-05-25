@@ -11,10 +11,92 @@
 <body>
 
     <div class="container">
-        <h1>Olá Mundo 👋</h1>
-        <p>Projeto simples para testar versionamento com Git.</p>
 
-        <button>Testar Alterações</button>
+        <h1>🚀 Guia Básico de Git</h1>
+        <p>
+            Página simples para testar alterações e versionamento.
+        </p>
+
+        <section>
+            <h2>1. Configurar Git</h2>
+
+            <pre>
+git config user.name "SeuUserName"
+git config user.email "seu@email.com"
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. Enviar projeto para GitHub</h2>
+
+            <pre>
+cd pasta-do-projeto
+
+git init
+git add .
+git commit -m "Primeiro commit"
+
+git branch -M main
+
+git remote add origin URL_DO_REPO
+
+git push -u origin main
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. Atualizar projeto</h2>
+
+            <pre>
+git add .
+git commit -m "minha alteração"
+git push
+            </pre>
+        </section>
+
+        <section>
+            <h2>4. Clonar projeto</h2>
+
+            <pre>
+git clone URL_DO_REPO
+
+cd nome-do-projeto
+
+git pull
+            </pre>
+        </section>
+
+        <section>
+            <h2>5. Versionamento (Branch)</h2>
+
+            <h3>Criar nova versão</h3>
+
+            <pre>
+git checkout -b nova-versao
+            </pre>
+
+            <h3>Enviar nova versão</h3>
+
+            <pre>
+git add .
+git commit -m "nova versão"
+git push origin nova-versao
+            </pre>
+
+            <h3>Voltar para main</h3>
+
+            <pre>
+git checkout main
+            </pre>
+
+            <h3>Juntar versões</h3>
+
+            <pre>
+git merge nova-versao
+git push
+            </pre>
+        </section>
+
     </div>
 
 </body>
